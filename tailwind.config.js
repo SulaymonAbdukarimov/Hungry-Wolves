@@ -2,9 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
-    color: {
-      hero: "#825AFC",
+    extend: {
+      colors: {
+        hero: "#825AFC",
+      },
+      fontFamily: {
+        condensed: ["Barlow Condensed"],
+        barlow: ["Barlow"],
+      },
     },
   },
   plugins: [],

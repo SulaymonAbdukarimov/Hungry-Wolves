@@ -23,7 +23,7 @@ function Navbar() {
         <div>
           <img src={logo} alt="logo" />
         </div>
-        <ul className="text-white flex justify-between mt-1">
+        <ul className="text-white flex justify-between mt-1 font-condensed">
           {links.map((item) => (
             <li key={item.id} className="mr-8 uppercase font-bold text-sm ">
               <NavLink className="decoration-white" to={item.url}>
