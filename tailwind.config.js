@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       width: {
         70: ["70%"],
+        50: ["200px"],
+      },
+      height: {
+        50: ["200px"],
       },
       padding: {
         104: ["104px"],
@@ -40,9 +44,23 @@ module.exports = {
         icons: ["0 0 15px 3px #2F68FF"],
         button: ["0 0 15px 5px #2F68FF"],
         aboutcard: ["0px 2px 15px rgba(0, 0, 0, 0.5)"],
+        white: ["0 0 15px 3px #fff"],
+        sky: ["0 0 15px 3px #4B4FCC"],
       },
       blur: {
         100: ["160px"],
+      },
+      backgroundImage: {
+        bgbanner: " url('/src/assets/mainpage/banner/shadow.png')",
+        firstcard: "linear-gradient(127.93deg, #2F68FF 0.98%, #AF52FA 100%)",
+        bgglow: "url('/src/assets/mainpage/roadmap/glow.png')",
+      },
+      borderColor: {
+        firstcard: "linear-gradient(127.93deg, #2F68FF 0.98%, #AF52FA 100%)",
+      },
+      dropShadow: {
+        stone: ["0px 4px 10px rgba(0, 0, 0, 0.5)"],
+        sky: ["0 0 15px 3px #4B4FCB"],
       },
     },
   },
