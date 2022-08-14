@@ -15,35 +15,40 @@ function Hero() {
   ];
 
   return (
-    <div className="bg-slate-900 w-full h-full">
+    <div className="bg-slate-900 w-full h-full pb-147">
       {/* Title */}
-      <div className=" pt-6 w-3/5 mx-auto">
-        <h1 className="uppercase font-bold text-center w-full text-white text-5xl tracking-wider font-condensed not-italic">
+      <div className="">
+        <h1 className="title max-w-[1280px] mx-auto">
           get Your <span className="text-[#825AFC] ">hungry wolf</span>
         </h1>
-        <p className="text-white text-1xl tracking-wider leading-6 text-center font-barlow max-w-2xl mx-auto py-5">
+        <p className="text-white max-w-[860px] px-5 mx-auto text-lg sm:text-2xl  tracking-small leading-28 sm:leading-8 text-center font-barlow pt-5">
           Hungry Wolves is a collection of 6,000 randomly generated wolves
           prowling the Ethereum blockchain as ERC-721 NFTs. Half of the wolves
           hold the rank of Alpha and the other half Beta. Beta wolves will be
           able to challenge Alpha wolves for their metadata rank.
         </p>
-        <button className="bg-[#2F68FF] hover:bg-[#2153da]   shadow-xl shadow-[#2F68FF] transition duration-200 text-white font-bold font-condensed uppercase text-1xl leading-3 flex justify-center items-center px-5 py-4 rounded-lg text-center mx-auto mb-9">
+        <button className="bg-[#2F68FF] hover:bg-[#2153da] shadow-button transition duration-200 text-white font-bold font-condensed uppercase text-1xl leading-3 flex justify-center items-center px-5 py-4 rounded-lg text-center mx-auto mt-6">
           <RiShip2Line className="text-2xl mr-2" />
           <span>Buy wolves now</span>
         </button>
       </div>
 
       {/* Carousel */}
-      <div className="w-full flex justify-start items-start overflow-auto">
-        <div className="bg-hero">
-          <div className="w-80 h-80">
-            <img
-              className="w-full h-full object-cover"
-              src={wolf1}
-              alt="wolf"
-            />
+      <div className="w-full flex space-x-5 overflow-auto no-scrollbar mt-16">
+        {cards.map((item) => (
+          <div
+            key={item.id}
+            className="bg-ochkok w-1/4 h-96 flex justify-center scroll-smooth no-scrollbar items-center scrollbar-hide rounded-twenty border-2 border-kok"
+          >
+            <div className="w-[400px] h-full p-5">
+              <img
+                className="w-full h-full object-cover rounded-ten"
+                src={item.img}
+                alt="wolf"
+              />
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

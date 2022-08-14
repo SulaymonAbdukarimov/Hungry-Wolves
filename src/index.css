@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&family=Barlow:wght@400;500;700&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,4 +10,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.title {
+  @apply uppercase font-bold text-center w-full text-white text-5xl sm:text-8xl tracking-wide sm:tracking-wider font-condensed not-italic leading-56 sm:leading-hero;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
