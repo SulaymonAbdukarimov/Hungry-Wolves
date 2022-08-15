@@ -2,7 +2,7 @@ import React from "react";
 import banner from "../../assets/mainpage/banner/banner.png";
 function Banner(props) {
   return (
-    <div className="bg-slate-900 w-full h-full pt-[145px]">
+    <div className="bg-slate-900 w-full h-full pt-[145px] relative">
       <h3 className="text-white font-bold text-6xl text-center font-condensed leading-[72px] tracking-0.15 uppercase ">
         GET Your HUNGRY WOLF
       </h3>
@@ -24,8 +24,32 @@ function Banner(props) {
         </svg>
         <span>visit opensea</span>
       </button>
-      <div className="w-full h-[378px] bg-bgbanner bg-cover bg-center relative">
+      <div className="w-full h-[311px] bg-bgbanner bg-cover bg-center relative">
         <img className="w-full h-full absolute bottom-0 " src={banner} alt="" />
+      </div>
+      <div className="absolute bottom-0 w-full overflow-hidden">
+        <svg
+          width="1440"
+          height="378"
+          viewBox="0 0 1440 378"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1440" height="378" fill="url(#paint0_linear_201_7386)" />
+          <defs>
+            <linearGradient
+              id="paint0_linear_201_7386"
+              x1="720"
+              y1="338"
+              x2="720"
+              y2="189"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#1C1C1E" />
+              <stop offset="1" stop-color="#1C1C1E" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
       </div>
     </div>
   );

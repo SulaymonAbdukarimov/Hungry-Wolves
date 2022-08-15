@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      margin: {
+        120: ["-70px"],
+      },
       width: {
         70: ["70%"],
         50: ["200px"],
@@ -39,6 +42,7 @@ module.exports = {
         small: ["0.02em"],
         0.15: ["0.015em"],
         0.005: ["0.005em"],
+        0.24: ["0.24em"],
       },
       boxShadow: {
         icons: ["0 0 15px 3px #2F68FF"],
@@ -46,6 +50,7 @@ module.exports = {
         aboutcard: ["0px 2px 15px rgba(0, 0, 0, 0.5)"],
         white: ["0 0 15px 3px #fff"],
         sky: ["0 0 15px 3px #4B4FCC"],
+        footer: ["0px -2px 4px rgba(0, 0, 0, 0.3)"],
       },
       blur: {
         100: ["160px"],
@@ -54,13 +59,21 @@ module.exports = {
         bgbanner: " url('/src/assets/mainpage/banner/shadow.png')",
         firstcard: "linear-gradient(127.93deg, #2F68FF 0.98%, #AF52FA 100%)",
         bgglow: "url('/src/assets/mainpage/roadmap/glow.png')",
+        bgqorasmall: "url('/src/assets/mainpage/roadmap/background2.png')",
+        bgqorabig: "url('/src/assets/mainpage/roadmap/background1.png')",
+        castle: "url('/src/assets/mainpage/roadmap/castle.png')",
       },
       borderColor: {
         firstcard: "linear-gradient(127.93deg, #2F68FF 0.98%, #AF52FA 100%)",
+        team: "#5A5A61",
       },
       dropShadow: {
         stone: ["0px 4px 10px rgba(0, 0, 0, 0.5)"],
         sky: ["0 0 15px 3px #4B4FCB"],
+      },
+      backgroundColor: {
+        team: "#2B2B35",
+        footer: "#1C1C1E",
       },
     },
   },

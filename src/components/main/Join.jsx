@@ -14,9 +14,9 @@ function Join(props) {
             join specific Wolfpacks inside The Wolf Den. Each pack has its own
             branding and gated channel inside our Discord server.
           </p>
-          <button className="bg-[rgb(47,104,255)] hover:bg-[#2153da] shadow-button transition duration-200 text-white font-bold font-condensed uppercase text-1xl leading-3 flex justify-center items-center px-5 py-4 rounded-lg mt-8">
+          <button className="bg-[rgb(47,104,255)] hover:bg-[#2153da] shadow-button transition duration-200 text-white font-bold font-condensed uppercase text-sm leading-3 flex justify-center items-center px-5 py-4 rounded-lg mt-8">
             <svg
-              className="text-2xl mr-2"
+              className="w-6 h-[18px] mr-2"
               width="26"
               height="26"
               viewBox="0 0 26 26"

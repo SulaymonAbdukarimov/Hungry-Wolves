@@ -4,6 +4,11 @@ import stone from "../../assets/mainpage/roadmap/darkpack2.png";
 import sheep from "../../assets/mainpage/roadmap/sheep.png";
 import uchburchak from "../../assets/mainpage/roadmap/uchburchak.png";
 import competitions from "../../assets/mainpage/roadmap/competitions.png";
+import alpha from "../../assets/mainpage/roadmap/alpha.png";
+import beta from "../../assets/mainpage/roadmap/beta.png";
+import wolf from "../../assets/mainpage/roadmap/wolf.png";
+import firewolf from "../../assets/mainpage/roadmap/firewolf.png";
+import background from "../../assets/mainpage/roadmap/background1.png";
 
 function Roadmap(props) {
   return (
@@ -12,8 +17,8 @@ function Roadmap(props) {
         <h4 className="uppercase font-bold text-6xl leading-72 font-condensed text-white tracking-0.15 pb-[36px]">
           roadmap
         </h4>
-
         {/* cards */}
+        
         <div className="flex justify-start items-start flex-nowrap gap-5 w-full">
           {/* card 1 */}
           <div className="bg-firstcard w-1/3 h-full rounded-twenty border-2 border-[#7E89FD] pt-[33px]">
@@ -133,7 +138,7 @@ function Roadmap(props) {
         {/* end of cards */}
 
         {/* 2 line*/}
-        <div className="flex justify-start items-start flex-nowrap gap-5 w-full">
+        <div className="flex justify-start items-end flex-nowrap gap-5 w-full mt-120">
           {/* Start of card 4 */}
 
           <div className="bg-firstcard w-1/3 h-full rounded-twenty border-2 border-[#7E89FD] pt-[33px] relative">
@@ -192,8 +197,94 @@ function Roadmap(props) {
           </div>
           {/* End of Card 5 */}
 
-          {/* end of 2 line */}
+          {/* Start of card 6 */}
+          <div className="bg-bgqorasmall bg-cover w-1/3 h-full rounded-twenty border-2 border-[#5D5D5E] pt-[33px] relative">
+            <div className="max-w-[380px] mx-auto px-5">
+              <h5 className="font-bold text-xl font-condensed text-white uppercase tracking-widest">
+                Underway
+              </h5>
+              <div className="mt-[36px] text-white font-medium text-xl font-barlow tracking-0.005">
+                Unlock the ability for Beta wolves to challenge Alpha wolves for
+                their metadata rank.
+              </div>
+              <div className="mt-[44px] flex justify-start">
+                <div className="w-24 h-28">
+                  <img
+                    className="w-full h-full object-cover "
+                    src={alpha}
+                    alt="alpha"
+                  />
+                </div>
+                <div className="w-24 h-28 ml-4">
+                  <img
+                    className="w-full h-full object-cover "
+                    src={beta}
+                    alt="beta"
+                  />
+                </div>
+              </div>
+
+              <div className=" text-right pb-[21px] mt-[47px] font-bold  text-white text-5xl leading-[58px] tracking-[0.03em] font-condensed ">
+                06
+              </div>
+            </div>
+          </div>
+          {/* End of Card 6 */}
         </div>
+        {/* end of 2 line */}
+
+        {/* Start of 3 line */}
+        <div className="flex mt-5 gap-5">
+          {/* Start 7 cards */}
+          <div className="bg-bgqorabig bg-cover w-1/2 h-full rounded-twenty border-2 border-[#5D5D5E] pt-[33px] relative">
+            <div className="max-w-[590px] mx-auto px-5">
+              <h5 className="font-bold text-xl font-condensed text-white uppercase tracking-widest">
+                Underway
+              </h5>
+              <div className="mt-[36px] text-white font-medium text-xl font-barlow tracking-0.005">
+                Allow Dominance to be redeemed to upgrade the visual traits of
+                your Hungry Wolf.
+              </div>
+              <div className="mt-[61px] flex items-end">
+                <div className="w-[250px] h-[250px]">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={wolf}
+                    alt="wolf 1"
+                  />
+                </div>
+                <div className="w-[250px] h-[250px]">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={firewolf}
+                    alt="firewolf"
+                  />
+                </div>
+
+                <div className=" text-right pb-[21px] mt-[47px] font-bold  text-white text-5xl leading-[58px] tracking-[0.03em] font-condensed ">
+                  07
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* End 7 cards */}
+          {/* Start of 8 card */}
+          <div className="bg-castle bg-cover w-1/2 h-auto rounded-twenty border-2 border-[#5D5D5E] pt-[33px] before:bg-bgqorabig before:inset-0  before:w-full before:h-full relative">
+            <div className="max-w-[590px] mx-auto px-5">
+              <h5 className="font-bold text-xl font-condensed text-white uppercase tracking-widest">
+                Underway
+              </h5>
+              <div className="mt-[36px] text-white font-medium text-xl font-barlow tracking-0.005">
+                Copy about Hungry World here.
+              </div>
+              <div className=" absolute bottom-0 right-[30px] pb-[21px] mt-[47px] font-bold  text-white text-5xl leading-[58px] tracking-[0.03em] font-condensed ">
+                08
+              </div>
+            </div>
+          </div>
+          {/* End of 8 card */}
+        </div>
+        {/* End of 3 line */}
       </div>
     </div>
   );

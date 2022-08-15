@@ -3,7 +3,6 @@ import logo from "../../assets/mainpage/logo.png";
 import { NavLink } from "react-router-dom";
 import { SiDiscord } from "react-icons/si";
 import { FaTwitter } from "react-icons/fa";
-import { FaRegNewspaper } from "react-icons/fa";
 
 function Navbar() {
   const links = [
