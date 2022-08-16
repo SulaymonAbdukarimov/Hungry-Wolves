@@ -110,7 +110,7 @@ function Faq() {
   ];
 
   return (
-    <div className="pt-[147px] bg-[#1C1C1E] w-full h-full  pb-[47px]">
+    <div className="pt-[147px] bg-herobg w-full h-full  pb-[47px]">
       <div className="max-w-[1280px]  mx-auto px-5">
         <h2 className="uppercase font-bold font-condensed text-white text-6xl leading-72 tracking-0.15  ">
           faq

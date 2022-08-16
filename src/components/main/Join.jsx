@@ -2,8 +2,10 @@ import React from "react";
 import hungry from "../../assets/mainpage/wild/hungry.png";
 function Join(props) {
   return (
-    <div className="bg-slate-900 w-full h-full pt-147">
-      <div className="flex justify-between max-w-[1280px] px-5 mx-auto">
+    <div className="bg-herobg w-full h-full pt-147 relative">
+      <div className="opacity-25 bg-coolbg  blur-[200px] rounded-full  w-2/3 h-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
+
+      <div className="flex justify-between relative z-10 max-w-[1280px] px-5 mx-auto">
         {/* content */}
         <div className="w-3/6">
           <h4 className="text-white font-condensed text-6xl font-bold leading-72 uppercase tracking-0.15">
@@ -14,7 +16,7 @@ function Join(props) {
             join specific Wolfpacks inside The Wolf Den. Each pack has its own
             branding and gated channel inside our Discord server.
           </p>
-          <button className="bg-[rgb(47,104,255)] hover:bg-[#2153da] shadow-button transition duration-200 text-white font-bold font-condensed uppercase text-sm leading-3 flex justify-center items-center px-5 py-4 rounded-lg mt-8">
+          <button className="bg-blueberry transition duration-300 shadow-icons hover:shadow-none text-white font-bold font-condensed uppercase text-sm leading-3 flex justify-center items-center px-5 py-4 rounded-lg mt-8">
             <svg
               className="w-6 h-[18px] mr-2"
               width="26"
@@ -28,7 +30,9 @@ function Join(props) {
                 fill="white"
               />
             </svg>
-            <span>connect now</span>
+            <span className="text-white font-bold font-condensed uppercase text-sm leading-6 tracking-widest">
+              connect now
+            </span>
           </button>
         </div>
         {/* card */}

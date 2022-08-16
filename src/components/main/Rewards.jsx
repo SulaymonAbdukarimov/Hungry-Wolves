@@ -4,8 +4,9 @@ import after from "../../assets/mainpage/rewards/after.png";
 
 function Rewards() {
   return (
-    <div className="bg-slate-900 w-full h-full pt-[173px] pb-[145px]">
-      <div className="max-w-[1280px] px-5 mx-auto flex justify-between ">
+    <div className="relative bg-herobg w-full h-full   pt-[173px] pb-[145px] ">
+      <div className="opacity-25 bg-coolbg  blur-[100px]   rounded-full  w-2/3 h-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
+      <div className="max-w-[1280px] px-5 mx-auto flex justify-between relative z-10">
         {/* content */}
         <div className="w-3/6">
           <h3 className="font-bold text-6xl tracking-0.15 leading-[68px] uppercase text-white font-condensed pb-5">

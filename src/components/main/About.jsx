@@ -5,16 +5,16 @@ import logo from "../../assets/mainpage/about/large.png";
 
 function About() {
   return (
-    <div className="bg-slate-900 w-full h-full pb-147">
-     <div className="max-w-[1020px] mx-auto px-5">
-     <h3 className="text-white font-bold text-6xl leading-72 text-center tracking-0.15 uppercase font-condensed">
-        learn about our project
-      </h3>
-      <p className="text-xl text-center text-white opacity-70 font-barlow tracking-0.005 mt-4 mb-14">
-        3 minute overview to understand our game mechanics and ecosystem to get
-        you started.
-      </p>
-     </div>
+    <div className="bg-herobg w-full h-full pb-12">
+      <div className="max-w-[1020px] mx-auto px-5">
+        <h3 className="text-white font-bold text-6xl leading-72 text-center tracking-0.15 uppercase font-condensed">
+          learn about our project
+        </h3>
+        <p className="text-xl text-center text-white opacity-70 font-barlow tracking-0.005 mt-4 mb-14">
+          3 minute overview to understand our game mechanics and ecosystem to
+          get you started.
+        </p>
+      </div>
       <div className="w-70 mx-auto flex justify-center items-center">
         <div className="relative w-[200px] h-[200px]">
           <div className="w-full h-full">
@@ -24,7 +24,7 @@ function About() {
               alt="first"
             />
           </div>
-          <div className="w-full h-full blur-100 bg-white absolute inset-0"></div>
+          <div className="w-full h-full blur-[220px] bg-white absolute inset-0"></div>
         </div>
         <div className="bg-ochkok shadow-aboutcard flex justify-center items-center  rounded-twenty border-2 border-kok">
           <div className=" py-[190px] px-[120px] relative">
@@ -37,18 +37,18 @@ function About() {
           </div>
         </div>
 
-        <div className="relative w-[200px] h-[200px]">
-          <div className="w-full h-full">
+        <div className="relative w-[200px] h-[200px] ">
+          <div className="w-full h-full ">
             <img
               className="w-full h-full object-cover"
               src={second}
               alt="second"
             />
           </div>
-          <div className="w-full h-full blur-100 bg-white absolute inset-0"></div>
+          <div className="w-full h-full blur-[220px] bg-white absolute inset-0"></div>
         </div>
       </div>
-      <button className="bg-[rgb(47,104,255)] hover:bg-[#2153da] shadow-button transition duration-200 text-white font-bold font-condensed uppercase text-1xl leading-3 flex justify-center items-center px-5 py-4 rounded-lg text-center mx-auto mt-8">
+      <button className="bg-[rgb(47,104,255)] transition duration-300  shadow-icons hover:shadow-none  flex justify-center items-center px-5 py-4 rounded-lg text-center mx-auto mt-8">
         <svg
           className="text-2xl mr-2"
           width="26"
@@ -63,7 +63,7 @@ function About() {
           />
         </svg>
 
-        <span>Read white paper</span>
+        <span className="text-white font-bold font-condensed uppercase text-sm leading-6 tracking-widest">Read white paper</span>
       </button>
     </div>
   );

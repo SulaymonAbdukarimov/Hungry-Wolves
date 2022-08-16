@@ -7,8 +7,9 @@ import kasmonaft from "../../assets/mainpage/team/kasmanftwolf.png";
 
 function Team() {
   return (
-    <div className="pt-[147px] bg-[#1C1C1E] w-full h-full">
-      <div className="max-w-[1260px] mx-auto px-5">
+    <div className="relative pt-[147px] bg-herobg w-full h-full">
+      <div className="opacity-25 bg-coolbg  blur-[200px]   rounded-full  w-2/3 h-[105%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
+      <div className="max-w-[1260px] mx-auto px-5 relative z-10">
         <h3 className="text-white font-bold uppercase font-condensed text-6xl leading-72 text-center tracking-0.15  ">
           our team
         </h3>

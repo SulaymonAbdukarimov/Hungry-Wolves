@@ -18,30 +18,36 @@ function Navbar() {
   return (
     <div className="bg-herobg">
       <div className="xl-container max-w-[1380px] px-5 mx-auto pb-104 flex justify-between py-6">
-        <div>
-          <img src={logo} alt="logo" />
+        <div className="w-[186px] h-[96px] ">
+          <img className="w-full h-full " src={logo} alt="logo" />
         </div>
         <ul className="text-white flex justify-between font-condensed pt-[11px]">
           {links.map((item) => (
-            <li key={item.id} className="mr-8 uppercase font-bold text-sm ">
-              <NavLink className="decoration-white" to={item.url}>
+            <li
+              key={item.id}
+              className="mr-8  uppercase font-bold  text-sm leading-4 tracking-widest "
+            >
+              <NavLink
+                className=" transition duration-200 hover:text-blueberry hover:opacity-100 decoration-white"
+                to={item.url}
+              >
                 {item.name}
               </NavLink>
             </li>
           ))}
         </ul>
-        <div className="flex justify-between space-x-4 pt-[7px]">
-          <div className="rounded-full cursor-pointer bg-[#2F68FF] hover:bg-[#214fcf] transition duration-200 shadow-icons w-7 h-7 flex justify-center items-center px-1 py-1.5">
+        <div className="flex justify-between space-x-4 pt-[5px]">
+          <div className="transition duration-200  rounded-full cursor-pointer bg-[#2F68FF]  shadow-icons  w-[26px] h-[26px] flex justify-center items-center px-1 py-1.5">
             <a href="https://t.me/Sulaymon_Abdukarimov" target="_blank">
               <SiDiscord className="text-white " />
             </a>
           </div>
-          <div className="rounded-full cursor-pointer bg-[#2F68FF] hover:bg-[#214fcf] transition duration-200 shadow-icons  w-7 h-7 flex justify-center items-center px-1 py-1.5">
+          <div className="rounded-full cursor-pointer bg-[#2F68FF] transition duration-200 shadow-icons  w-[26px] h-[26px] flex justify-center items-center px-1 py-1.5">
             <a href="https://t.me/Sulaymon_Abdukarimov" target="_blank">
-              <FaTwitter className="text-white text-lg" />
+              <FaTwitter className="text-white text-lg w" />
             </a>
           </div>
-          <div className=" bg-[#2F68FF] cursor-pointer hover:bg-[#214fcf] shadow-icons transition duration-200 shadow-blue-500/200 rounded-full  w-7 h-7 flex justify-center items-center px-1 py-1.5">
+          <div className=" bg-[#2F68FF] cursor-pointer shadow-icons transition duration-200 shadow-blue-500/200 rounded-full  w-[26px] h-[26px] flex justify-center items-center px-1 py-1.5">
             <a href="https://t.me/Sulaymon_Abdukarimov" target="_blank">
               <svg
                 className="text-white text-lg"
@@ -60,7 +66,7 @@ function Navbar() {
               </svg>
             </a>
           </div>
-          <div className=" bg-[#2F68FF] cursor-pointer hover:bg-[#214fcf] shadow-icons   transition duration-200  shadow-blue-500/200 rounded-full w-7 h-7 flex justify-center items-center px-1 py-1.5">
+          <div className=" bg-[#2F68FF] cursor-pointer shadow-icons transition duration-500  shadow-blue-500/200 rounded-full w-[26px] h-[26px] flex justify-center items-center px-1 py-1.5">
             <a href="https://t.me/Sulaymon_Abdukarimov" target="_blank">
               <svg
                 className="text-white text-lg"

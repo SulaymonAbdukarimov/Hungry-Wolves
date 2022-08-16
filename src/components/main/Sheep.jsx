@@ -13,7 +13,7 @@ function Sheep() {
     { id: 6, img: sheep1 },
   ];
   return (
-    <div className="bg-slate-900 w-full h-full pt-[170px]">
+    <div className="bg-herobg w-full h-full pt-[170px]">
       <div className="max-w-[1070px] px-5 mx-auto pb-14">
         <h3 className="uppercase text-white font-bold text-6xl leading-72 text-center  font-condensed tracking-0.15 mb-5">
           Hunt Delicious Sheep

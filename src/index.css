@@ -21,7 +21,12 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-
+  .coolshadow {
+    @apply opacity-25 bg-coolbg blur-500;
+  }
+  .textShadow-20 {
+    text-shadow: 0 0 20px #fff;
+  }
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
