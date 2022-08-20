@@ -19,13 +19,17 @@ module.exports = {
       },
       colors: {
         hero: "#825AFC",
+        line:'rgba(255, 255, 255, 0.1)',
         kok: "#696373",
         ochkok: "#2B2A32",
         herobg: "#1C1C1F",
+        mobile: "#222231",
         blueberry: "rgb(47 104 255)",
+        heroshadow: "0px 2px 4px rgba(0, 0, 0, 0.3)",
         gradient:
           "linear-gradient(45deg,#2f68ff 42.29%,#af52fa 67.11%,#8256fa 91.94%)",
-        card1:'linear-gradient(1turn,hsla(0,0%,100%,.25),rgba(28,28,30,.25) 50.16%,hsla(0,0%,100%,0)),linear-gradient(180deg,hsla(0,0%,100%,.25),rgba(28,28,30,.25) 49.53%,hsla(0,0%,100%,0) 102.26%)'
+        card1:
+          "linear-gradient(1turn,hsla(0,0%,100%,.25),rgba(28,28,30,.25) 50.16%,hsla(0,0%,100%,0)),linear-gradient(180deg,hsla(0,0%,100%,.25),rgba(28,28,30,.25) 49.53%,hsla(0,0%,100%,0) 102.26%)",
       },
       fontFamily: {
         condensed: ["Barlow Condensed"],

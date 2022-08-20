@@ -129,11 +129,11 @@ function Faq() {
                   {item.question}
                 </h3>
                 {selected === index ? (
-                  <div className="shadow-icons bg-[#2F68FF] w-[26px] h-[26px] mr-3  transition duration-200 rounded-full flex justify-center items-center">
+                  <div className="shadow-icons cursor-pointer bg-[#2F68FF] w-[26px] h-[26px] mr-3  transition duration-200 rounded-full flex justify-center items-center">
                     <i class="fa-solid fa-minus "></i>
                   </div>
                 ) : (
-                  <div className="w-[26px] h-[26px] mr-3 cursor-pointer bg-[#5D5D5E] rounded-full flex justify-center items-center">
+                  <div className="w-[26px] h-[26px] transition duration-200 hover:shadow-icons hover:bg-[#2F68FF] mr-3 cursor-pointer bg-[#5D5D5E] rounded-full flex justify-center items-center">
                     <i class="fa-solid fa-plus p-[6px]  text-white  w-full h-full"></i>
                   </div>
                 )}

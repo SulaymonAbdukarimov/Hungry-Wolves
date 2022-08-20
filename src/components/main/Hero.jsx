@@ -14,6 +14,7 @@ function Hero() {
   ];
 
   return (
+
     <div className="relative bg-herobg w-full h-full pb-147 ">
       {/* Title */}
       <div>
@@ -75,5 +76,4 @@ function Hero() {
     </div>
   );
 }
-
 export default Hero;

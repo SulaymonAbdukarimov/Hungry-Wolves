@@ -5,13 +5,13 @@ import Faq from "./Faq";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Join from "./Join";
-import Navbar from "./Navbar";
+import { Navbar } from "./Navbar";
 import Rewards from "./Rewards";
 import Roadmap from "./Roadmap";
 import Sheep from "./Sheep";
 import Team from "./Team";
 
-function Main(props) {
+function Main() {
   return (
     <>
       <Navbar />
